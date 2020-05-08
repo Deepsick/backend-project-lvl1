@@ -1,0 +1,2 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/29d0bc634de07ca722b2/maintainability)](https://codeclimate.com/github/Deepsick/backend-project-lvl1/maintainability)
+[![Node CI](https://github.com/Deepsick/backend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/Deepsick/backend-project-lvl1/actions)
