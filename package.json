@@ -1,20 +1,28 @@
 {
-  "name": "backend-project-lvl1",
+  "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "",
+  "description": "The set of small math games",
   "main": "index.js",
   "bin": {
-    "brain-games": "bin/brain-games.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Deepsick/backend-project-lvl1.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "math games",
+    "CLI",
+    "training project"
+  ],
+  "engines": {
+    "node": ">=13.0.0"
+  },
+  "author": "Deepsick",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Deepsick/backend-project-lvl1/issues"
