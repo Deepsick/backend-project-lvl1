@@ -1,4 +1,2 @@
 #!/usr/bin/env node
-import startBrainGames from '../src/games/brainGames.js';
-
-startBrainGames();
+console.log('Welcome to the Brain Games!');
