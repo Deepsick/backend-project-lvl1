@@ -1,1 +1,3 @@
-console.log('Welcome to the Brain Games!');
+import startBrainGames from './src/games/brainGames.js';
+
+export default startBrainGames;

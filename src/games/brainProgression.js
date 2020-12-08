@@ -6,13 +6,13 @@ const DESCRIPTION = 'What number is missing in the progression?';
 
 const generateProgression = (start, step, length) => (
   new Array(length)
-    .fill('*')
+    .fill(null)
     .map((_, index) => start + step * index)
 );
 
-const getQuestion = (progression, hiddenIndex) => {
+const getQuestion = (progression, hiddenElementIndex) => {
   const copiedProgression = [...progression];
-  copiedProgression[hiddenIndex] = HIDDEN_MARK;
+  copiedProgression[hiddenElementIndex] = HIDDEN_MARK;
   return copiedProgression.join(' ');
 };
 
@@ -22,9 +22,9 @@ const generateRound = () => {
   const progressionStep = generateRandomNumber();
 
   const progression = generateProgression(progressionStart, progressionStep, progressionLength);
-  const hiddenIndex = generateRandomNumber(0, progressionLength - 1);
-  const question = getQuestion(progression, hiddenIndex);
-  const correctAnswer = progression[hiddenIndex];
+  const hiddenElementIndex = generateRandomNumber(0, progressionLength - 1);
+  const question = getQuestion(progression, hiddenElementIndex);
+  const correctAnswer = progression[hiddenElementIndex];
 
   return [
     question,
